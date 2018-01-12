@@ -82,7 +82,14 @@ int main ()
                 return 0;
             }
         }
-        printf ( "= %f\n", ( wage_sum / ( double ) wage_cnt ));
+
+        if ( wage_cnt > 0 )
+        {
+            printf ( "= %f\n", ( wage_sum / ( double ) wage_cnt ));
+        } else
+        {
+            printf ( "= N/A\n" );
+        }
         wage_sum = 0;
         wage_cnt = 0;
     }
